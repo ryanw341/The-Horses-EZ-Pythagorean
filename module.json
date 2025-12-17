@@ -1,0 +1,25 @@
+{
+  "id": "horses-ez-pythagorean",
+  "title": "The Horses EZ Pythagorean",
+  "description": "Hotkeyable Pythagorean calculator with 3D token distance support.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "authors": [
+    { "name": "The Horses" }
+  ],
+  "esmodules": [
+    "scripts/pythagorean.js"
+  ],
+  "scripts": [],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "relationships": {},
+  "socket": false,
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
