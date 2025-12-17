@@ -16,10 +16,11 @@
   "scripts": [],
   "styles": [],
   "packs": [],
+
   "languages": [],
   "relationships": {},
   "socket": false,
   "url": "https://github.com/ryanw341/The-Horses-EZ-Pythagorean",
   "manifest": "https://raw.githubusercontent.com/ryanw341/The-Horses-EZ-Pythagorean/main/module.json",
-  "download": "https://raw.githubusercontent.com/ryanw341/The-Horses-EZ-Pythagorean/main/horses-ez-pythagorean.zip"
+  "download": "https://github.com/ryanw341/The-Horses-EZ-Pythagorean/archive/refs/tags/v1.0.2.zip"
 }
