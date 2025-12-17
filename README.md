@@ -9,7 +9,7 @@ Hotkeyable Pythagorean calculator for Foundry VTT with 3D token distance support
 ## Installation
 
 - Manifest URL: `https://raw.githubusercontent.com/ryanw341/The-Horses-EZ-Pythagorean/main/module.json`
-- Latest release ZIP: `https://github.com/ryanw341/The-Horses-EZ-Pythagorean/releases/latest/download/horses-ez-pythagorean.zip`
+- Latest release ZIP: `https://raw.githubusercontent.com/ryanw341/The-Horses-EZ-Pythagorean/main/horses-ez-pythagorean.zip`
 
 ## Usage
 
