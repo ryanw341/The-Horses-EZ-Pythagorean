@@ -20,6 +20,6 @@
   "relationships": {},
   "socket": false,
   "url": "https://github.com/ryanw341/The-Horses-EZ-Pythagorean",
-  "manifest": "https://github.com/ryanw341/The-Horses-EZ-Pythagorean/releases/latest/download/module.json",
+  "manifest": "https://raw.githubusercontent.com/ryanw341/The-Horses-EZ-Pythagorean/main/module.json",
   "download": "https://github.com/ryanw341/The-Horses-EZ-Pythagorean/releases/latest/download/horses-ez-pythagorean.zip"
 }
