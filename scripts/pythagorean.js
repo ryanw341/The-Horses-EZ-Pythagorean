@@ -31,8 +31,8 @@ function pxToSceneUnits(px) {
 
 function showResultDialog({ title, a, b, c, unitLabel = "" }) {
   const u = unitLabel ? ` ${unitLabel}` : "";
-  new Dialog({
-    title,
+  new foundry.applications.api.DialogV2({
+    window: { title },
     content: `
       <div>
         <p><b>Results</b></p>
@@ -45,14 +45,16 @@ function showResultDialog({ title, a, b, c, unitLabel = "" }) {
         </p>
       </div>
     `,
-    buttons: { ok: { label: "OK" } },
-    default: "ok"
-  }, { width: 420 }).render(true);
+    buttons: [
+      { action: "ok", label: "OK", default: true }
+    ],
+    position: { width: 420 }
+  }).render({ force: true });
 }
 
 function showManualDialog() {
-  new Dialog({
-    title: "Pythagorean Theorem Calculator",
+  new foundry.applications.api.DialogV2({
+    window: { title: "Pythagorean Theorem Calculator" },
     content: `
       <form>
         <p>Enter exactly <b>two</b> values. Leave the third blank.</p>
@@ -70,13 +72,16 @@ function showManualDialog() {
         </div>
       </form>
     `,
-    buttons: {
-      solve: {
+    buttons: [
+      {
+        action: "solve",
         label: "Solve",
-        callback: (html) => {
-          const rawA = html.find('[name="a"]').val();
-          const rawB = html.find('[name="b"]').val();
-          const rawC = html.find('[name="c"]').val();
+        default: true,
+        callback: (event, button, dialog) => {
+          const form = dialog.element.querySelector("form");
+          const rawA = form.elements.a.value;
+          const rawB = form.elements.b.value;
+          const rawC = form.elements.c.value;
 
           const a = rawA === "" ? null : Number(rawA);
           const b = rawB === "" ? null : Number(rawB);
@@ -118,10 +123,10 @@ function showManualDialog() {
           }
         }
       },
-      cancel: { label: "Cancel" }
-    },
-    default: "solve"
-  }, { width: 440 }).render(true);
+      { action: "cancel", label: "Cancel" }
+    ],
+    position: { width: 440 }
+  }).render({ force: true });
 }
 
 function calculateFromTokens() {
