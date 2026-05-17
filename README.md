@@ -4,7 +4,7 @@ Hotkeyable Pythagorean calculator for Foundry VTT with 3D token distance support
 
 ## Requirements
 
-- Foundry VTT v11 or newer
+- Foundry VTT v13 or newer (verified on v14)
 
 ## Installation
 
